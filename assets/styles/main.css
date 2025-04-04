@@ -1,0 +1,81 @@
+@import url('./modules/normalize.css');
+@import url('./modules/fonts.css');
+@import url('./modules/colors.css');
+
+@layer base {
+    html {
+      font-family: var(--font-family-primary);
+    }
+
+
+    body {
+      background-color: var(--color-bg);
+      
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Font Size */
+    h1 {
+      font-size: var(--font-size-h1);
+    }
+
+    h2 {
+      font-size: var(--font-size-h2);
+    }
+
+    h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    h4 {
+      font-size: var(--font-size-h4);
+    }
+    
+
+
+    /* Nav */
+    header > nav {
+      position: fixed;
+      width: 100%;
+      background-color: var(--color-bg);
+      padding: 21px 100px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      /* padding: 10px; */
+      
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    .nav-links ul {
+      margin-left: 400px;
+      display: flex;
+      list-style: none;
+      gap: 16.71px;
+    }
+    
+    .nav-links ul li a{
+      padding: 10px 0px;
+      display: flex;
+      
+      text-decoration: none;
+      font-size: var(--font-size-h4-md);
+      color: var(--color-link);
+    }
+
+    .btn-register {
+      padding: 10px 20px;
+      cursor: pointer;
+      color: var(--color-text);
+      background-color: var(--color-primary);
+      border: none;
+      border-radius: 8px;
+    }
+
+
+  
+}
