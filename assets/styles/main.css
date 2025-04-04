@@ -33,49 +33,71 @@
     }
     
 
-
-    /* Nav */
-    header > nav {
-      position: fixed;
-      width: 100%;
-      background-color: var(--color-bg);
-      padding: 21px 100px;
-    }
-
+    header,
     nav {
-      display: flex;
+      display: block;
+    }
+    
+    ul, li {
+      display: inline-flex;
       align-items: center;
-      /* padding: 10px; */
-      
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-
-    .nav-links ul {
-      margin-left: 400px;
-      display: flex;
+      /* padding: 0 10px; */
       list-style: none;
-      gap: 16.71px;
+      flex: 0 0 auto;
+      gap: 16.7px;
+      
+      position: relative;
+      width: fit-content;
     }
     
-    .nav-links ul li a{
-      padding: 10px 0px;
-      display: flex;
-      
+    ul {
+      margin: 0px;
+    }
+    
+    a {
       text-decoration: none;
-      font-size: var(--font-size-h4-md);
       color: var(--color-link);
     }
-
-    .btn-register {
-      padding: 10px 20px;
-      cursor: pointer;
-      color: var(--color-text);
-      background-color: var(--color-primary);
-      border: none;
-      border-radius: 8px;
+    
+    .logo {
+      position: relative;
     }
 
+    .container .main-nav {
+      /* background-color: blue; */
+      /* left: 0; */
+      /* right: 0; */
+      position: relative;
+      padding: 2px 100px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .main-nav {
+      display:  flex;
+      justify-content: space-between;
+      position: absolute;;
+      
+    }
+
+    .main-red-button {
+      /* display: inline-block; */
+      position: relative;
+      padding: 22px;
+      display: inline-flex;
+      /* justify-content: space-between; */
+    } 
+    
+    .main-red-button > a {
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      padding: 9px 22.7px ;
+      cursor: pointer;
+      border-radius: 2.7px;
+    }
+
+    
+    
 
   
 }
