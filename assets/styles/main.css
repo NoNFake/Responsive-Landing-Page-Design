@@ -1,6 +1,7 @@
 @import url('./modules/normalize.css');
 @import url('./modules/fonts.css');
 @import url('./modules/colors.css');
+@import url('./modules/buttons.css');
 
 @layer base {
     html {
@@ -31,7 +32,18 @@
     h4 {
       font-size: var(--font-size-h4);
     }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      padding: 0;
+    }
     
+
+    p {
+      font-size: var(--font-size-p-rg);
+      
+      
+    }
 
     header,
     nav {
@@ -119,7 +131,61 @@
     }
 
     
+    /* HOME */
+
+
+    .home {
+      display: block;
+      background-color: var(--color-silver);
+    }
+
+    .home .hero-section {
+      display: flex;
+      padding: 66px 100px;
+      justify-content: space-between;
+    }
     
+    .home .frame {
+      padding: 112px 100px;
+    }
+    .home .text{
+      margin: 0;
+      display: inline-block;
+    }
+    
+    .home #d-grey-text {
+      color: var(--color-d_grey);
+    }
+
+    .home #green-text {
+      color: var(--color-primary);
+    }
+
+    .home #grey-text {
+
+      color: var(--color-grey);
+    }
+
+
+    .hero-section .button {
+
+      
+      position: relative;
+      display: inline-flex;
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      padding: 9px 22px ;
+      cursor: pointer;
+      
+
+      gap: 6.96px;
+
+    }
+    
+
+    .illustration {
+      position: relative;
+    }
 
   
 }

@@ -24,10 +24,10 @@
     --font-size-nd-rg:  20px;
     --font-size-sn-rg:  16px;
 
-    --font-size-h1-rg:  var(--font-size-xxl-rg);
-    --font-size-h2-rg:  var(--font-size-lg-rg);
-    --font-size-h3-rg:  var(--font-size-nd-rg);
-    --font-size-h4-rg:  var(--font-size-sn-rg);
+    --font-size-p-rg:  var(--font-size-xxl-rg);
+    --font-size-p-rg:  var(--font-size-lg-rg);
+    --font-size-p-rg:  var(--font-size-nd-rg);
+    --font-size-p-rg:  var(--font-size-sn-rg);
   
     
     /* Medium */
