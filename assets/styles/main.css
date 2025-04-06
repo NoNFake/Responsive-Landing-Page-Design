@@ -8,7 +8,7 @@
     }
 
 
-    body {
+    body.home  {
       background-color: var(--color-bg);
       
       margin: 0;
