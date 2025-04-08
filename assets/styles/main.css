@@ -3,6 +3,9 @@
 @import url('./modules/colors.css');
 @import url('./modules/buttons.css');
 
+/* Headre */
+@import url('./sections/header.css');
+
 @layer base {
     html {
       font-family: var(--font-family-primary);
@@ -16,34 +19,7 @@
       padding: 0;
     }
 
-    /* Font Size */
-    h1 {
-      font-size: var(--font-size-h1);
-    }
-
-    h2 {
-      font-size: var(--font-size-h2);
-    }
-
-    h3 {
-      font-size: var(--font-size-h3);
-    }
-
-    h4 {
-      font-size: var(--font-size-h4);
-    }
-
-    h1, h2, h3, h4 {
-      margin: 0;
-      padding: 0;
-    }
     
-
-    p {
-      font-size: var(--font-size-p-rg);
-      
-      
-    }
 
     header,
     nav {
@@ -71,64 +47,7 @@
       color: var(--color-link);
     }
     
-    .span-logo {
-      position: relative;
-    }
-
-    .a-logo {
-      display: block;
-    }
-
-    .logo {
-      display: block;
-      /* align-items: ; */
-
-      /* position: relative; */
-      /* cursor: pointer; */
-    }
-
-
-    .header-area {
-      /* display: block; */
-      position: relative;
-      /* padding: 2px 100px; */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    }
     
- 
-
-    .container {
-      padding: 0 100px;
-      
-    }
-
-
-    .header-nav {
-      align-items: center;
-      box-sizing: border-box;
-      display:  flex;
-      
-      justify-content: space-between;
-      
-    }
-    
-
-    .main-regist-button {
-      /* display: inline-block; */
-      position: relative;
-      padding: 22px;
-      display: inline-flex;
-      /* justify-content: space-between; */
-    } 
-    
-    .main-regist-button > a {
-      background-color: var(--color-primary);
-      color: var(--color-text);
-      padding: 9px 22.7px ;
-      cursor: pointer;
-      border-radius: 2.7px;
-    }
 
     
     /* HOME */
@@ -166,19 +85,18 @@
       color: var(--color-grey);
     }
 
-
+    /* Bigger Need */
     .hero-section .button {
 
       
       position: relative;
-      display: inline-flex;
+      display: flex;
       background-color: var(--color-primary);
       color: var(--color-text);
       padding: 9px 22px ;
       cursor: pointer;
       
 
-      gap: 6.96px;
 
     }
     

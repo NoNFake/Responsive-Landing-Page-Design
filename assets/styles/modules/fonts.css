@@ -82,4 +82,41 @@
     --font-size-h2-md-mb:  var(--font-size-lg-md);
     --font-size-h3-md-mb:  var(--font-size-ng-md);
     --font-size-h4-md-mb:  var(--font-size-sn-md);
+
+
+
+
+
+
+
+
+    /* Font Size */
+    h1 {
+      font-size: var(--font-size-h1);
+    }
+
+    h2 {
+      font-size: var(--font-size-h2);
+    }
+
+    h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    h4 {
+      font-size: var(--font-size-h4);
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      padding: 0;
+      color: var(--color-d_grey);
+    }
+    
+
+    p {
+      font-size: var(--font-size-p-rg);
+      color: var(--color-grey);
+      
+    }
   }
