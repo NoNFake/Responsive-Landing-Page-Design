@@ -1,0 +1,62 @@
+/* Colors Module */
+
+:root{
+    /* Colors */
+    --color-black:          #263238;
+    --color-d_grey:         #4D4D4D;
+    --color-grey:           #717171;
+    --color-l_grey:         #89939E;
+    --color-grey-blue:      #ABBED1;
+    --color-silver:         #F5F7FA;
+    --color-white:          #FFFFFF;
+
+    --color-green:          #4CAF4F;
+    --color-black:          #263238;
+    --color-blue:           #2194f3;
+
+    --color-bg:             var(--color-white);
+
+    --color-primary:        var(--color-green);
+    --color-secondary:      var(--color-black);
+    --color-info:           var(--color-blue);
+
+    --color-text:           var(--color-white);
+    --color-link:           var(--color-d_grey);
+
+    /* Colors Shade */
+    --color-green-100-sh:   #43A046;
+    --color-green-80-sh:    #388E3B;
+    --color-green-60-sh:    #237D31;
+    --color-green-40-sh:    #1B5E1F;
+    --color-green-20-sh:    #103E13;
+
+    --color-shade-1:        var(--color-green-100-sh);
+    --color-shade-2:        var(--color-green-80-sh);
+    --color-shade-3:        var(--color-green-60-sh);
+    --color-shade-4:        var(--color-green-40-sh);
+    --color-shade-5:        var(--color-green-20-sh);
+
+
+    /* Color Tint */
+    --color-green-100-tint: #66BB69;
+    --color-green-80-tint:  #81C784;
+    --color-green-60-tint:  #A5D6A7;
+    --color-green-40-tint:  #C8E6C9;
+    --color-green-20-tint:  #E8F5E9;
+
+    --color-tint-1:         var(--color-green-100-tint);
+    --color-tint-2:         var(--color-green-80-tint);
+    --color-tint-3:         var(--color-green-60-tint);
+    --color-tint-4:         var(--color-green-40-tint);
+    --color-tint-5:         var(--color-green-20-tint);
+
+
+    /* Color Action */
+    --color-yelow:          #FBC02D;
+    --color-red:            #E53835;
+    --color-green:          #2E7D31;
+
+    --color-action-warning: var(--color-yelow);
+    --color-action-error:   var(--color-red);
+    --color-action-success: var(--color-green);
+}

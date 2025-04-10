@@ -1,0 +1,52 @@
+
+@layer header {
+
+    header {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        align-items: center;
+        padding: 10px 100px;
+    }   
+    
+    
+    .logo {
+        /* position:relative;
+         */
+         margin-right: auto;
+    }
+    
+  
+    li a {
+        color: var(--color-link);
+    }
+    
+    .right-menu {
+        align-items: center;
+        /* box-sizing: border-box; */
+        display: flex;
+        /* justify-content:flex-end; */
+        position: relative;
+    }
+    
+    
+    .header-menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        /* position: relative; */
+        /* justify-content:space-around; */
+
+    }
+
+    .header-menu  .register {
+        padding: 22px;
+        /* display: inline-flex; */
+        /* display: flex; */
+        color: var(--color-text);
+        /* color: black; */
+
+        background-color: var(--color-primary);
+        padding: 9px 22.7px ;
+        border-radius: 2.7px;
+    }
+}

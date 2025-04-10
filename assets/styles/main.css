@@ -1,0 +1,62 @@
+@import url('./modules/normalize.css');
+@import url('./modules/fonts.css');
+@import url('./modules/colors.css');
+@import url('./modules/buttons.css');
+
+/* Headre */
+@import url('./sections/header.css');
+
+/* Hero */
+@import url('./sections/hero_section.css');
+
+@layer base {
+    html {
+      font-family: var(--font-family-primary);
+    }
+
+
+    body.home  {
+      background-color: var(--color-bg);
+      
+      margin: 0;
+      padding: 0;
+    }
+
+    
+
+    header,
+    nav {
+      display: block;
+    }
+    
+    ul, li {
+      display: inline-flex;
+      align-items: center;
+      /* padding: 0 10px; */
+      list-style: none;
+      flex: 0 0 auto;
+      gap: 16.7px;
+      
+      position: relative;
+      width: fit-content;
+    }
+    
+    ul {
+      margin: 0px;
+    }
+    
+    a {
+      text-decoration: none;
+      /* color: var(--color-link); */
+    }
+    
+    
+
+    
+    /* HOME */
+
+
+    
+
+  
+}

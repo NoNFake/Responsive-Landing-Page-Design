@@ -1,0 +1,122 @@
+/* Fonts Module */
+
+:root {
+    /* Fonts | Size*/
+    --font-family-primary: 'Inter', sans-serif;
+
+    /* PC */
+    /* Header */
+    --font-size-xxl:    76px;
+    --font-size-lg:     44px;
+    --font-size-nd:     36px;
+    --font-size-sn:     28px;
+
+    --font-size-h1:     var(--font-size-xxl);
+    --font-size-h2:     var(--font-size-lg);
+    --font-size-h3:     var(--font-size-nd);
+    --font-size-h4:     var(--font-size-sn);
+
+
+    /* Body */
+    /* Regular*/
+    --font-size-xxl-rg: 28px;
+    --font-size-lg-rg:  24px;
+    --font-size-nd-rg:  20px;
+    --font-size-sn-rg:  16px;
+
+    --font-size-p-rg:  var(--font-size-xxl-rg);
+    --font-size-p-rg:  var(--font-size-lg-rg);
+    --font-size-p-rg:  var(--font-size-nd-rg);
+    --font-size-p-rg:  var(--font-size-sn-rg);
+  
+    
+    /* Medium */
+    --font-size-xxl-md: 28px;
+    --font-size-lg-md:  24px;
+    --font-size-nd-md:  20px;
+    --font-size-sn-md:  16px;
+    
+    --font-size-h1-md:  var(--font-size-xxl-md);
+    --font-size-h2-md:  var(--font-size-lg-md);
+    --font-size-h3-md:  var(--font-size-ng-md);
+    --font-size-h4-md:  var(--font-size-sn-md);
+
+
+
+
+
+
+    /* Mobile */
+    /* Header mobile*/
+    --font-size-xxl-mb:    64px;
+    --font-size-lg-mb:     36px;
+    --font-size-nd-mb:     28px;
+    --font-size-sn-mb:     20px;
+
+    --font-size-h1-mb:     var(--font-size-xxl);
+    --font-size-h2-mb:     var(--font-size-lg);
+    --font-size-h3-mb:     var(--font-size-nd);
+    --font-size-h4-mb:     var(--font-size-sn);
+
+
+    /* Body */
+    /* Regular mobile*/
+    --font-size-xxl-rg-mb: 18px;
+    --font-size-lg-rg-mb:  16px;
+    --font-size-nd-rg-mb:  14px;
+    --font-size-sn-rg-mb:  12px;
+
+    --font-size-h1-rg-mb:  var(--font-size-xxl-rg);
+    --font-size-h2-rg-mb:  var(--font-size-lg-rg);
+    --font-size-h3-rg-mb:  var(--font-size-nd-rg);
+    --font-size-h4-rg-mb:  var(--font-size-sn-rg);
+  
+    
+    /* Medium */
+    --font-size-xxl-md-mb: 18px;
+    --font-size-lg-md-mb:  16px;
+    --font-size-nd-md-mb:  14px;
+    --font-size-sn-md-mb:  12px;
+    
+    --font-size-h1-md-mb:  var(--font-size-xxl-md);
+    --font-size-h2-md-mb:  var(--font-size-lg-md);
+    --font-size-h3-md-mb:  var(--font-size-ng-md);
+    --font-size-h4-md-mb:  var(--font-size-sn-md);
+
+
+
+
+
+
+
+
+    /* Font Size */
+    h1 {
+      font-size: var(--font-size-h1);
+    }
+
+    h2 {
+      font-size: var(--font-size-h2);
+    }
+
+    h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    h4 {
+      font-size: var(--font-size-h4);
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      padding: 0;
+      color: var(--color-d_grey);
+    }
+    
+
+    p {
+      font-size: var(--font-size-p-rg);
+      color: var(--color-grey);
+      
+    }
+  }
