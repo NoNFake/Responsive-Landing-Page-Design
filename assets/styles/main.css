@@ -6,6 +6,9 @@
 /* Headre */
 @import url('./sections/header.css');
 
+/* Hero */
+@import url('./sections/hero_section.css');
+
 @layer base {
     html {
       font-family: var(--font-family-primary);
@@ -44,7 +47,7 @@
     
     a {
       text-decoration: none;
-      color: var(--color-link);
+      /* color: var(--color-link); */
     }
     
     
@@ -53,57 +56,7 @@
     /* HOME */
 
 
-    .home {
-      display: block;
-      background-color: var(--color-silver);
-    }
-
-    .home .hero-section {
-      display: flex;
-      padding: 66px 100px;
-      justify-content: space-between;
-    }
     
-    .home .frame {
-      padding: 112px 100px;
-    }
-    .home .text{
-      margin: 0;
-      display: inline-block;
-    }
-    
-    .home #d-grey-text {
-      color: var(--color-d_grey);
-    }
-
-    .home #green-text {
-      color: var(--color-primary);
-    }
-
-    .home #grey-text {
-
-      color: var(--color-grey);
-    }
-
-    /* Bigger Need */
-    .hero-section .button {
-
-      
-      position: relative;
-      display: flex;
-      background-color: var(--color-primary);
-      color: var(--color-text);
-      padding: 9px 22px ;
-      cursor: pointer;
-      
-
-
-    }
-    
-
-    .illustration {
-      position: relative;
-    }
 
   
 }
