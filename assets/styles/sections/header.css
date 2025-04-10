@@ -15,7 +15,10 @@
          margin-right: auto;
     }
     
-    
+  
+    li a {
+        color: var(--color-link);
+    }
     
     .right-menu {
         align-items: center;
@@ -29,21 +32,21 @@
     .header-menu {
         display: flex;
         align-items: center;
+        gap: 30px;
         /* position: relative; */
         /* justify-content:space-around; */
 
     }
 
-    .main-regist-button {
-        position: relative;
+    .header-menu  .register {
         padding: 22px;
         /* display: inline-flex; */
         /* display: flex; */
+        color: var(--color-text);
+        /* color: black; */
 
         background-color: var(--color-primary);
-        color: var(--color-text);
         padding: 9px 22.7px ;
-        cursor: pointer;
         border-radius: 2.7px;
     }
 }

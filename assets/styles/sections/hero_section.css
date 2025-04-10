@@ -1,0 +1,52 @@
+@layer hero-section {
+    
+    .hero {
+
+        display: flex;
+        padding: 66px 100px;
+        justify-content: space-between;
+        background-color: var(--color-silver);
+    }
+    
+    .frame {
+    padding: 112px 100px;
+    }
+    
+    .hero .text{
+    margin: 0;
+    display: inline-block;
+    }
+    
+    .hero  #d-grey-text {
+    color: var(--color-d_grey);
+    }
+
+    #green-text {
+    color: var(--color-primary);
+    }
+
+    .hero-section  #grey-text {
+
+    color: var(--color-grey);
+    }
+
+    /* Bigger Need */
+    .hero .button {
+
+    
+    position: relative;
+    display: flex;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 9px 22px ;
+    cursor: pointer;
+    
+
+
+    }
+    
+
+    .illustration {
+        position: relative;
+    }
+}
