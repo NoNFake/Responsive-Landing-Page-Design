@@ -1,6 +1,8 @@
 @layer hero-section {
     
     .hero {
+        /* width: 1002px; */
+        height: 416px;
 
         display: flex;
         padding: 66px 100px;
@@ -47,6 +49,7 @@
     
 
     .illustration {
-        position: relative;
+        /* position: relative; */
+        width: 30%;
     }
 }
