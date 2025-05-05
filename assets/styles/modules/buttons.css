@@ -1,8 +1,27 @@
-:root {
-    button {
-        border: none;
-        border-radius: 2.7px;
+@import url('./fonts.css');
+
+@layer buttons {
+    
+    
+    .btn {
+        --btn-base-font-size: var(--font-size-sn-md, 11px);
+        --btn-base-text-color: var(--color-text, #ffffff);
+        --btn-base-background-color: var(--color-primary, #4CAF4F);
+        --btn-border-radius: 2.78px;
+
+        
+        display: var(--btn-display);
+        font-size: var(--font-size-sn-md);
+        background-color: var(--btn-base-background-color);
+        color: var(--btn-base-text-color);
+        border-radius: var(--btn-border-radius);
+        text-decoration: none;
+        cursor: pointer;
+
     }
 
     
+
+
+
 }

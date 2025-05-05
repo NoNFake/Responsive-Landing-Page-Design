@@ -1,54 +1,79 @@
+@import url('../modules/fonts.css');
+@import url('../modules/colors.css');
 
 @layer header {
-
-    header {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    .main-header {
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
         /* position: relative; */
-        align-items: center;
-        padding: 10px 0px;
+        --main-header-padding-block: 21px;
+        
+        /* Default */
+        --btn-display: inline-flex;
+        
+        --btn-primary-normal-default-noicon-font-size: 20px ;
+        --btn-primary-normal-default-noicon-text-color: var(--color-white);
+        --btn-primary-normal-default-noicon-background-color: var(--color-primary);
+        --btn-primary-normal-default-noicon-border-focus:2px solid var(--color-black);
 
-        display: inline-flex;
-    }   
-    
-    
-    .logo {
-        /* position:relative;
-         */
-         margin-right: auto;
-    }
-    
-  
-    li a {
-        color: var(--color-link);
-    }
-    
-    .right-menu {
-        align-items: center;
-        /* box-sizing: border-box; */
-        display: flex;
-        /* justify-content:flex-end; */
-        position: relative;
-    }
-    
-    
-    .header-menu {
+        
+
+
+
+
         display: flex;
         align-items: center;
-        gap: 30px;
-        /* position: relative; */
-        /* justify-content:space-around; */
+        justify-content: space-between;
+        padding-block: var(--main-header-padding-block);
+    
+    
+    
+        .main-nav {
+            --main-nav-margin-left: auto;
+            --main-nav-margin-right: 23px;
+            --main-nav-element-gap: 17px;
 
+            --main-nav-links-color: var(--color-link);
+            /* --main-nav-links-font-size: ; */
+
+
+            margin-left: var(--main-nav-margin-left);
+            margin-right: var(--main-nav-margin-right);
+
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: var(--main-nav-element-gap);
+                list-style: none;   
+                
+                padding: 0;
+                margin: 0;
+            }
+
+
+            a {
+                color: var(--color-link);
+                text-decoration: none;
+            }
+
+            
+        }
+
+
+        .btn {
+            padding: 9px 22px;
+
+            .btn__icon-arrow {
+
+                --btn-icon-arrow-size: 16px;
+                
+
+                position: relative;
+                width: var(--btn-icon-arrow-size);
+                height: var(--btn-icon-arrow-size);
+            }
+        }
     }
-
-    .header-menu  .register {
-        padding: 22px;
-        /* display: inline-flex; */
-        /* display: flex; */
-        color: var(--color-text);
-        /* color: black; */
-
-        background-color: var(--color-primary);
-        padding: 9px 22.7px ;
-        border-radius: 2.7px;
-    }
+    
 }

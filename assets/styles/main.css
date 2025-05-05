@@ -9,46 +9,38 @@
 /* Hero */
 @import url('./sections/hero_section.css');
 
+@import url('./modules/buttons.css');
+
+/* * {
+  box-sizing: border-box;
+} */
+
 @layer base {
+
+  :root {
+    /* Layaut */
+
+    --body-layout-max-width: 1632px;
+    --body--inline-padding: 144px;
+
+  }
+
+
     html {
       font-family: var(--font-family-primary);
     }
 
 
-    body.home  {
+    body  {
       background-color: var(--color-bg);
-      
-      margin: 0;
-      padding: 0;
+      max-width: var(--body-layout-max-width);
+      padding-inline: var(--body--inline-padding);
+      margin-inline: auto;
     }
 
     
 
-    header,
-    nav {
-      display: block;
-    }
-    
-    ul, li {
-      display: inline-flex;
-      align-items: center;
-      /* padding: 0 10px; */
-      list-style: none;
-      flex: 0 0 auto;
-      gap: 16.7px;
-      
-      position: relative;
-      width: fit-content;
-    }
-    
-    ul {
-      margin: 0px;
-    }
-    
-    a {
-      text-decoration: none;
-      /* color: var(--color-link); */
-    }
+
     
     
     .conteiner {
