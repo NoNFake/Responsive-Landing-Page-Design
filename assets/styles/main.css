@@ -9,7 +9,10 @@
 /* Hero */
 @import url('./sections/hero_section.css');
 
-@import url('./modules/buttons.css');
+/* Clients */
+@import url('./sections/clients.css');
+
+
 
 /* * {
   box-sizing: border-box;

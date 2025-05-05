@@ -1,0 +1,25 @@
+@layer clients {
+    .clients {
+        
+
+        /* flex-direction: column; */
+        padding: 27px;
+        text-align: center;
+     
+        .clients__content {
+            /* display: flex;             */
+            align-items: center;
+            .clients-logos {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 100px;
+
+                .clients-logo{
+                    width: 50px;
+                }
+                
+            }
+        }
+    }
+}
