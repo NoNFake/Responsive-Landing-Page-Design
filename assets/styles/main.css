@@ -9,6 +9,12 @@
 /* Hero */
 @import url('./sections/hero_section.css');
 
+@import url('./modules/buttons.css');
+
+/* * {
+  box-sizing: border-box;
+} */
+
 @layer base {
 
   :root {

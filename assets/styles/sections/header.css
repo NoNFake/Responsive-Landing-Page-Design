@@ -57,7 +57,22 @@
                 text-decoration: none;
             }
 
+            
+        }
 
+
+        .btn {
+            padding: 9px 22px;
+
+            .btn__icon-arrow {
+
+                --btn-icon-arrow-size: 16px;
+                
+
+                position: relative;
+                width: var(--btn-icon-arrow-size);
+                height: var(--btn-icon-arrow-size);
+            }
         }
     }
     
