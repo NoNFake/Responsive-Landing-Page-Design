@@ -2,15 +2,20 @@
 @import url('../modules/colors.css');
 
 @layer header {
-    
+    /* .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+  
+            padding: 0 20px;
+ 
+        } */
     .main-header {
         /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
         /* position: relative; */
-        --main-header-padding-block: 21px;
-        
-        /* Default */
+
+        --main-header-padding-block: 10px;
         --btn-display: inline-flex;
-        
         --btn-primary-normal-default-noicon-font-size: 20px ;
         --btn-primary-normal-default-noicon-text-color: var(--color-white);
         --btn-primary-normal-default-noicon-background-color: var(--color-primary);
@@ -18,13 +23,14 @@
 
         
 
-
-
-
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-block: var(--main-header-padding-block);
+        margin-block: var(--main-header-padding-block);
+        /* border-block: var(--main-header-padding-block); */
+        /* padding-block: var(--main-header-padding-block); */
+        
+
     
     
     
@@ -34,21 +40,18 @@
             --main-nav-element-gap: 17px;
 
             --main-nav-links-color: var(--color-link);
-            /* --main-nav-links-font-size: ; */
 
 
             margin-left: var(--main-nav-margin-left);
             margin-right: var(--main-nav-margin-right);
 
+       
 
             ul {
                 display: flex;
-                align-items: center;
+                list-style-type: none;
                 gap: var(--main-nav-element-gap);
-                list-style: none;   
-                
-                padding: 0;
-                margin: 0;
+
             }
 
 
@@ -60,20 +63,6 @@
             
         }
 
-
-        .btn {
-            padding: 9px 22px;
-
-            .btn__icon-arrow {
-
-                --btn-icon-arrow-size: 16px;
-                
-
-                position: relative;
-                width: var(--btn-icon-arrow-size);
-                height: var(--btn-icon-arrow-size);
-            }
-        }
     }
     
 }

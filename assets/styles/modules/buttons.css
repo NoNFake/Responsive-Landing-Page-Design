@@ -1,15 +1,16 @@
 @import url('./fonts.css');
 
 @layer buttons {
-    
-    
+
+
     .btn {
+        --btn-display: inline-flex;
         --btn-base-font-size: var(--font-size-sn-md, 11px);
         --btn-base-text-color: var(--color-text, #ffffff);
         --btn-base-background-color: var(--color-primary, #4CAF4F);
         --btn-border-radius: 2.78px;
 
-        
+
         display: var(--btn-display);
         font-size: var(--font-size-sn-md);
         background-color: var(--btn-base-background-color);
@@ -17,11 +18,17 @@
         border-radius: var(--btn-border-radius);
         text-decoration: none;
         cursor: pointer;
+        padding: 10px 22px;
 
+
+
+        .btn__icon-arrow {
+
+            --btn-icon-arrow-size: 16px;
+
+            position: relative;
+            width: var(--btn-icon-arrow-size);
+            height: var(--btn-icon-arrow-size);
+        }
     }
-
-    
-
-
-
 }

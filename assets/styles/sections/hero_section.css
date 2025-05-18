@@ -2,19 +2,14 @@
     
     .hero {
 
-        --hero-content-max-width: 510px;
-        --hero-content-gap:72px;
-
-        /* width: 1002px; */
-        /* height: 416px; */
-
+      
         display: flex;
         align-items: center;
-        /* padding: 66px 100px; */
+
         justify-content: space-between;
         background-color: var(--color-silver);
 
-        padding: 66px 100px;
+        padding: 66px 0;
 
         .hero__content {
             display: inline-block;
@@ -23,10 +18,7 @@
             
             flex-direction: column;
             gap: 11px;
-            
-            .btn {
-                padding: 10px 22px;
-            }
+        
 
             .h1 {
                 margin-top: -0.70px;
