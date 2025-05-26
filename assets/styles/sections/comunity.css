@@ -1,8 +1,63 @@
-@layer comunity {
+.comunity {
+    display: flex;
     
-    .comunity {
+    .comunity-content {
         display: flex;
+        flex-direction: column;
+        gap: 11px;
+        align-items: center;
+
+
+
+        .comunity-content__text {
+                display: inline-block;
+                height: 62px;
+                width: 383px;
+                text-align: center;
+            }
+        
+            .frames {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                width: 80%;
+                padding: 0px 100px;
+        
+        
+                .frame {
+                    img {
+                      
+                        align-items: center;
+                        width: 45px;
+                        bottom: 11px;
+                    }
+                    
+                    gap: 6px;
+                    box-shadow: 0 1.39px 5px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    max-width: 185px;
+                    padding: 16px 22px;
+                    
+                    border-radius: 5.57px;
+                    
+                    text-align: center;
+                    
+        
+        
+                    .description {
+                        margin: 0 0;
+                    }
+        
+        
+                }
+            }
     }
+
+    
+    
 
 
 }

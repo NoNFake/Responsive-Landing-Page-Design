@@ -22,161 +22,129 @@
   </head>
 
   <body>
-    <!-- **** Header area *****  -->
-    <header class="main-header">
-      <div class="container">
+    <!-- Header -->
 
-        <a href="#" class="logo main-header">
-          <img src="./assets/media/img/Logo.svg" alt="Nexcent Logo" />
-        </a>
-
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-          </ul>
-        </nav>
-
-        <a href="#" class="btn main-header">
-          Register Now
-          <div class="btn__icon-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.2502 11.0002L13.7199 8.53045C14.0129 8.23755 14.0129 7.76266 13.7199 7.46976L11.2502 5.00003M13.5003 8.00011L2.5 8.00011"
-                stroke="#ffffff"
-                stroke-width="1.1"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-        </a>
-
+    <header class="container main-header">
+      <div class="main-header__logo-img">
+        <img src="./assets/media/img/Logo.svg" alt="Nexcent" />
       </div>
+
+      <nav class="main-header__nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn">Register</a>
     </header>
 
+    <!-- Hero -->
     <main>
-      <!-- HERO IMAGE -->
       <section class="hero">
-        <div class="container">
-            <div class="hero__content">
-            <h1>
+        <div class="container hero-container">
+          <div class="hero-container__content">
+            <h2>
               Lessons and insights
-              <h1>
-                <span class="hero__content_primary_color">from 8 years</span>
-              </h1>
-            </h1>
-
+              <span class="hero-content__primary_color">from 8 years</span>
+            </h2>
             <p>
-              Where to grow your business as a photographer: site or social media?
+              Where to grow your business as a photographer: site or social
+              media?
             </p>
 
-            <a href="#" class="btn hero__content">Register</a>
+            <a href="#" class="btn">Register</a>
           </div>
-
-          <div class="image hero__content">
+          <div class="image">
             <img
               src="./assets/media/img/Illustration.svg"
               alt="Hero Illustration"
             />
           </div>
-        </div>        
+        </div>
       </section>
 
-      <!-- CLIENTS -->
-      <section class="clients">
-        <div class="clients__content">
-          <h3 class="clients__title">Our Clients</h3>
-          <p class="clients__description">We have been working with some Fortune 500+ clients</p>
-
-          <div class="clients-logos">
+      <!-- Clents -->
+      <section class="container section clients">
+        <div class="clients-content">
+          <div class="clients-content__text">
+            <h3>Our Clients</h3>
+            <p>We have been working with some Fortune 500+ clients</p>
+          </div>
+          <div class="image-clients-logos">
             <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-1.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-2.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-3.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-4.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-5.svg"
-            />
-            <img
-              class="clients-logo"
-              src="./assets/media/icon/clients_logos/Logo-6.svg"
+              src="./assets/media/icon/Clients-logos.svg"
+              alt="clients-logos"
             />
           </div>
         </div>
       </section>
 
       <!-- Community -->
-      <section calss="community">
-        <div class="container">
-          <h3>Manage your entire community in a single system</h3>
-          <p>Who is Nextcent suitable for?</p>
-          <div class="community__content">
-            <!-- Member -->
-            <div class="membership">
-              <div class="image community__content-membership">
-              <img
-                src="./assets/media/icon/community_logos/Icon.svg"
-                alt="membership"
-              />
-              <h4>Membership Organisations</h4>
-              <p>
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </div>
-
-            <!-- National -->
-            <div class="national">
-              <div class="image community__content-national">
-              <img
-                src="./assets/media/icon/community_logos/Icon-1.svg"
-                alt="national"
-              />
-              <h4>National Associations</h4>
-              <p>
-                Our membership management software provides full automation of membership renewals and payments
-              </p>
-            </div>
-
-            <!-- clubs -->
-            <div class="clubs">
-              <div class="image community__content-clubs">
-              <img
-                src="./assets/media/icon/community_logos/Icon-2.svg"
-                alt="clubs"
-              />
-              <h4>Clubs And Groups</h4>
-              <p>
-                Our membership management software provides full automation of membership renewals and payments
-              </p>
-            </div>
+      <section class="container section comunity">
+        <div class="comunity-content">
+          <div class="comunity-content__text">
+            <h3>Manage your entire community in a single system</h3>
+            <p>Who is Nextcent suitable for?</p>
           </div>
-          
+          <div class="frames">
+            <!-- Membership Organisations -->
+
+            <div class="frame membership-organisations">
+              <div class="member">
+                <img
+                  src="./assets/media/icon/community_logos/Icon.svg"
+                  alt="membership-organisations"
+                />
+
+                <h4>Membership Organisations</h4>
+              </div>
+              <div class="description">
+                <p>
+                  Our membership management software provides full automation of
+                  membership renewals and payments
+                </p>
+              </div>
+            </div>
+
+            <!-- National Associations -->
+            <div class="frame national-associations">
+              <div class="member">
+                <img
+                  src="./assets/media/icon/community_logos/Icon-1.svg"
+                  alt="National Associations"
+                />
+                <h4>National Associations</h4>
+              </div>
+              <div class="description">
+                <p>
+                  Our membership management software provides full automation of
+                  membership renewals and payments
+                </p>
+              </div>
+            </div>
+
+            <!-- Clubs And Groups -->
+            <div class="frame clubs-and-groups">
+              <div class="member">
+                <img
+                  src="./assets/media/icon/community_logos/Icon-2.svg"
+                  alt="Clubs And Groups"
+                />
+                <h4>Clubs And Groups</h4>
+              </div>
+              <div class="description">
+                <p>
+                  Our membership management software provides full automation of
+                  membership renewals and payments
+                </p>
+              </div>
+            </div>
+            <!-- end frame -->
+          </div>
         </div>
       </section>
     </main>

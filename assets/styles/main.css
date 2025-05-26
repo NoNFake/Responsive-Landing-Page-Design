@@ -51,15 +51,16 @@
       max-width: var(--body-layout-max-width);
       padding-inline: var(--body--inline-padding);
       margin: 0 auto;
-      /* width: 100%; */
+    }
 
+
+
+    .section {
+      margin-top: 22px;
+      flex-direction: column;
+
+      /* background-color: #000; */
 
     }
-    
-    /* HOME */
 
-
-    
-
-  
 }

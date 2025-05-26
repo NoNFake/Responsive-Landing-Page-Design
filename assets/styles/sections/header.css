@@ -1,68 +1,62 @@
 @import url('../modules/fonts.css');
 @import url('../modules/colors.css');
 
-@layer header {
-    /* .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-  
-            padding: 0 20px;
- 
-        } */
-    .main-header {
-        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-        /* position: relative; */
 
-        --main-header-padding-block: 10px;
-        --btn-display: inline-flex;
-        --btn-primary-normal-default-noicon-font-size: 20px ;
-        --btn-primary-normal-default-noicon-text-color: var(--color-white);
-        --btn-primary-normal-default-noicon-background-color: var(--color-primary);
-        --btn-primary-normal-default-noicon-border-focus:2px solid var(--color-black);
 
-        
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-block: var(--main-header-padding-block);
-        /* border-block: var(--main-header-padding-block); */
-        /* padding-block: var(--main-header-padding-block); */
-        
+.main-header{
+    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+
+    padding-block: 10px;
+    align-items: center;
+    justify-content: space-between;
 
     
-    
-    
-        .main-nav {
-            --main-nav-margin-left: auto;
-            --main-nav-margin-right: 23px;
-            --main-nav-element-gap: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: auto;
+    position: relative;
 
-            --main-nav-links-color: var(--color-link);
-
-
-            margin-left: var(--main-nav-margin-left);
-            margin-right: var(--main-nav-margin-right);
-
-       
-
-            ul {
-                display: flex;
-                list-style-type: none;
-                gap: var(--main-nav-element-gap);
-
-            }
+    .main-header__logo-img {
+        cursor: pointer;
+    }
 
 
-            a {
-                color: var(--color-link);
-                text-decoration: none;
-            }
+    .main-header__nav {
+        --main-nav-margin-left: auto;
+        --main-nav-margin-right: 23px;
+        --main-nav-element-gap: 17px;
 
-            
+        --main-nav-links-color: var(--color-link);
+
+
+        margin-left: var(--main-nav-margin-left);
+        margin-right: var(--main-nav-margin-right);
+
+
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: var(--main-nav-element-gap);
+
         }
 
+
+        a {
+            font-size: 11px;
+            color: var(--color-link);
+            text-decoration: none;
+        }
     }
-    
 }
+
+
+
+/* .main-header {
+   
+
+}
+ */
+

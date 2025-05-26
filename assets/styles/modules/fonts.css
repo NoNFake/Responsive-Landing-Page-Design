@@ -8,8 +8,8 @@
     /* Header */
     --font-size-xxl:    76px;
     --font-size-lg:     44px;
-    --font-size-nd:     36px;
-    --font-size-sn:     28px;
+    --font-size-nd:     25px;
+    --font-size-sn:     20px;
 
     --font-size-h1:     var(--font-size-xxl);
     --font-size-h2:     var(--font-size-lg);
@@ -19,15 +19,15 @@
 
     /* Body */
     /* Regular*/
-    --font-size-xxl-rg: 28px;
-    --font-size-lg-rg:  24px;
-    --font-size-nd-rg:  20px;
-    --font-size-sn-rg:  16px;
+    --font-size-xxl-rg: 18px;
+    --font-size-lg-rg:  16px;
+    --font-size-nd-rg:  24px;
+    --font-size-sn-rg:  11px;
 
-    --font-size-p-rg:  var(--font-size-xxl-rg);
-    --font-size-p-rg:  var(--font-size-lg-rg);
-    --font-size-p-rg:  var(--font-size-nd-rg);
-    --font-size-p-rg:  var(--font-size-sn-rg);
+    --font-size-p-xxl-rg:  var(--font-size-xxl-rg);
+    --font-size-p-lg-rg:  var(--font-size-lg-rg);
+    --font-size-p-nd-rg:  var(--font-size-nd-rg);
+    --font-size-p-sn-rg:  var(--font-size-sn-rg);
   
     
     /* Medium */
@@ -115,7 +115,10 @@
     
 
     p {
-      font-size: var(--font-size-p-rg);
+      margin: 0;
+      padding: 0;
+      
+      font-size: var(--font-size-p-sn-rg);
       color: var(--color-grey);
       
     }

@@ -1,34 +1,33 @@
 @import url('./fonts.css');
 
-@layer buttons {
+
+.btn {
+    
+    --btn-display: inline-block;
+    --btn-base-font-size: var(--font-size-p-sn-rg, 11px);
+    /* --btn-base-font-size: 12px; */
+    --btn-base-text-color: var(--color-text, #ffffff);
+    --btn-base-background-color: var(--color-primary, #4CAF4F);
+    --btn-border-radius: 2.78px;
+
+    box-sizing: border-box;
+    display: var(--btn-display);
+    font-size: var(--btn-base-font-size);
+    background-color: var(--btn-base-background-color);
+    color: var(--btn-base-text-color);
+    border-radius: var(--btn-border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 11px 23px;
 
 
-    .btn {
-        --btn-display: inline-flex;
-        --btn-base-font-size: var(--font-size-sn-md, 11px);
-        --btn-base-text-color: var(--color-text, #ffffff);
-        --btn-base-background-color: var(--color-primary, #4CAF4F);
-        --btn-border-radius: 2.78px;
 
+    .btn__icon-arrow {
 
-        display: var(--btn-display);
-        font-size: var(--font-size-sn-md);
-        background-color: var(--btn-base-background-color);
-        color: var(--btn-base-text-color);
-        border-radius: var(--btn-border-radius);
-        text-decoration: none;
-        cursor: pointer;
-        padding: 10px 22px;
+        --btn-icon-arrow-size: 16px;
 
-
-
-        .btn__icon-arrow {
-
-            --btn-icon-arrow-size: 16px;
-
-            position: relative;
-            width: var(--btn-icon-arrow-size);
-            height: var(--btn-icon-arrow-size);
-        }
+        position: relative;
+        width: var(--btn-icon-arrow-size);
+        height: var(--btn-icon-arrow-size);
     }
 }
