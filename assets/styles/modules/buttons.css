@@ -1,33 +1,98 @@
-@import url('./fonts.css');
-
-
 .btn {
     
-    --btn-display: inline-block;
-    --btn-base-font-size: var(--font-size-p-sn-rg, 11px);
-    /* --btn-base-font-size: 12px; */
+    --btn-display: inline-flex;
     --btn-base-text-color: var(--color-text, #ffffff);
     --btn-base-background-color: var(--color-primary, #4CAF4F);
-    --btn-border-radius: 2.78px;
+    --btn-border-radius: 4px;
 
-    box-sizing: border-box;
     display: var(--btn-display);
-    font-size: var(--btn-base-font-size);
-    background-color: var(--btn-base-background-color);
-    color: var(--btn-base-text-color);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 23px;
     border-radius: var(--btn-border-radius);
+    
+    background-color: var(--btn-base-background-color);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--btn-base-text-color);
+}
+
+
+.btn--icon  {
+    width: 24px;
+
+}
+
+/* Header */
+
+/* Log in */
+.btn--login {
+    display: flex;
+    flex-direction: row;
+
+    background: transparent;
+    padding: 10px 20px;
+    color: var(--color-primary);
+}
+
+
+/* Sign up */
+.btn--signup {
+    --btn-border-signup-radius: 6px;
+    border-radius: var(--btn-border-signup-radius);
+    display: flex;
+    flex-direction: row;
+
+    background: var(--color-primary);
+    padding: 10px 20px;
+    color: var(--color-white);
+}
+
+
+
+/* Hero */
+.btn--register {
+    padding: 14px 32px;
+    border-radius: 4px;
+
+}
+
+
+/* unlock */
+.btn--learn-more {
+    padding: 14px 32px;
+    border-radius: 4px;
+}
+
+.btn--readmore {
+    display: var(--btn-display);
+
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 5.9px 6px;
+    box-sizing: border-box;
     text-decoration: none;
     cursor: pointer;
-    padding: 11px 23px;
+  
+}
 
 
 
-    .btn__icon-arrow {
 
-        --btn-icon-arrow-size: 16px;
+.btn--tertiary {
+    color: var(--color-primary);
+    background-color: transparent;
+    gap: 2px;
+    padding: 8px;
+}
 
-        position: relative;
-        width: var(--btn-icon-arrow-size);
-        height: var(--btn-icon-arrow-size);
-    }
+
+.btn--demo {
+    padding: 14px 32px;
+    gap: 0.5rem;
+}
+
+.btn:hover {
+    filter: drop-shadow(0px 4px 4px #c0c0c0);
 }

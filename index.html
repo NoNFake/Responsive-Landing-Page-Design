@@ -24,39 +24,61 @@
   <body>
     <!-- Header -->
 
-    <header class="container main-header">
-      <div class="main-header__logo-img">
-        <img src="./assets/media/img/Logo.svg" alt="Nexcent" />
+    <header class="container header">
+      <div class="header__logo">
+        <a href="/"
+          ><img
+            src="./assets/media/img/Logo-black.svg"
+            alt="Nexcent"
+            class="header__logo-img"
+        /></a>
       </div>
 
-      <nav class="main-header__nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#community">Community</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list bd-rg-md-2">
+          <li class="header__nav-item">
+            <a href="#home" class="header__nav-link">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#Service" class="header__nav-link">Service</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#features" class="header__nav-link">Features</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#product" class="header__nav-link">Product</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#testimonial" class="header__nav-link">Testimonial</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#FAQ" class="header__nav-link">FAQ</a>
+          </li>
         </ul>
       </nav>
 
-      <a href="#" class="btn">Register</a>
+      <div class="header__login bd-rg-md-3">
+        <a href="#" class="btn btn--login">Login</a>
+        <a href="#" class="btn btn--signup">Sign up</a>
+      </div>
     </header>
 
-    <!-- Hero -->
     <main>
-      <section class="hero">
-        <div class="container hero-container">
+      <!-- Hero -->
+      <section class="container hero">
+        <div class="hero-container">
           <div class="hero-container__content">
-            <h2>
-              Lessons and insights
-              <span class="hero-content__primary_color">from 8 years</span>
-            </h2>
-            <p>
-              Where to grow your business as a photographer: site or social
-              media?
-            </p>
-
-            <a href="#" class="btn">Register</a>
+            <div class="hero-container__content-text">
+              <h1 class="h1">
+                Lessons and insights
+                <span class="primary-color">from 8 years</span>
+              </h1>
+              <p class="bd-rg-2">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+            </div>
+            <a href="#" class="btn btn--register bd-rg-md-2">Register</a>
           </div>
           <div class="image">
             <img
@@ -65,88 +87,563 @@
             />
           </div>
         </div>
+        <!-- Dots -->
+        <div class="hero__dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </section>
 
       <!-- Clents -->
-      <section class="container section clients">
+      <section class="container clients">
         <div class="clients-content">
           <div class="clients-content__text">
-            <h3>Our Clients</h3>
-            <p>We have been working with some Fortune 500+ clients</p>
+            <h2>Our Clients</h2>
+            <p class="bd-rg-2">
+              We have been working with some Fortune 500+ clients
+            </p>
           </div>
-          <div class="image-clients-logos">
+          <div class="clients-content__logos">
             <img
-              src="./assets/media/icon/Clients-logos.svg"
-              alt="clients-logos"
+              src="/assets/media/icon/clients_logos/Logo.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-1.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-2.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-3.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-4.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-5.svg"
+              class="clients-content__img"
+              alt=""
+            />
+            <img
+              src="/assets/media/icon/clients_logos/Logo-6.svg"
+              class="clients-content__img"
+              alt=""
             />
           </div>
         </div>
       </section>
 
       <!-- Community -->
-      <section class="container section comunity">
-        <div class="comunity-content">
-          <div class="comunity-content__text">
-            <h3>Manage your entire community in a single system</h3>
-            <p>Who is Nextcent suitable for?</p>
+      <section class="container community">
+        <div class="community__text">
+          <div class="community__text-header">
+            <h2 class="h2">Manage your entire community in a single system</h2>
+            <p class="bd-rg-2">Who is Nextcent suitable for?</p>
           </div>
-          <div class="frames">
-            <!-- Membership Organisations -->
+        </div>
 
-            <div class="frame membership-organisations">
-              <div class="member">
-                <img
-                  src="./assets/media/icon/community_logos/Icon.svg"
-                  alt="membership-organisations"
-                />
+        <div class="frames">
+          <!-- Membership Organisations -->
 
-                <h4>Membership Organisations</h4>
-              </div>
-              <div class="description">
-                <p>
-                  Our membership management software provides full automation of
-                  membership renewals and payments
-                </p>
+          <div class="frame">
+            <div class="member">
+              <img
+                src="./assets/media/icon/community_logos/Icon.svg"
+                alt="membership-organisations"
+                class="member__img"
+              />
+
+              <h3 class="member__header">Membership Organisations</h3>
+            </div>
+            <div class="member__description">
+              <p class="bd-rg-3">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+
+          <!-- National Associations -->
+          <div class="frame">
+            <div class="member">
+              <img
+                src="./assets/media/icon/community_logos/Icon-1.svg"
+                alt="National Associations"
+                class="member__img"
+              />
+              <h3 class="member__header">National Associations</h3>
+            </div>
+            <div class="member__description center">
+              <p class="bd-rg-3">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+
+          <!-- Clubs And Groups -->
+          <div class="frame">
+            <div class="member">
+              <img
+                src="./assets/media/icon/community_logos/Icon-2.svg"
+                alt="Clubs And Groups"
+                class="member__img"
+              />
+              <h3 class="member__header">Clubs And Groups</h3>
+            </div>
+            <div class="member__description">
+              <p class="bd-rg-3">
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+          <!-- end frame -->
+        </div>
+      </section>
+
+      <!-- Body -->
+      <section class="container unlock">
+        <div class="unlock-img">
+          <img
+            src="/assets/media/img/mobile-login-rafiki.svg"
+            alt="The unseen of spending three years at Pixelgrade"
+          />
+        </div>
+
+        <div class="unlock__frame">
+          <div class="unlock__frame-text">
+            <h2>The unseen of spending three years at Pixelgrade</h2>
+            <p class="bd-rg-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+          </div>
+          <a href="" class="btn btn--learn-more bd-rg-md-2">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section class="container achievements">
+        <div class="container achievements-container">
+          <div class="achievements-text">
+            <div class="achievements-text__heading">
+              <h2>
+                Helping a local
+                <span class="primary-color">business reinvent itself</span>
+              </h2>
+            </div>
+
+            <p class="bd-rg-2">
+              We reached here with our hard work and dedication
+            </p>
+          </div>
+
+          <!-- counts -->
+          <div class="counts">
+            <div class="count-item">
+              <img
+                src="./assets/media/icon/achivmets/Members.svg"
+                alt="members"
+                class="count-item__img"
+              />
+              <div>
+                <h3>2,245,341</h3>
+                <p class="bd-rg-2">Members</p>
               </div>
             </div>
 
-            <!-- National Associations -->
-            <div class="frame national-associations">
-              <div class="member">
-                <img
-                  src="./assets/media/icon/community_logos/Icon-1.svg"
-                  alt="National Associations"
-                />
-                <h4>National Associations</h4>
-              </div>
-              <div class="description">
-                <p>
-                  Our membership management software provides full automation of
-                  membership renewals and payments
-                </p>
+            <div class="count-item">
+              <img
+                src="./assets/media/icon/achivmets/Clubs.svg"
+                alt="clubs"
+                class="count-item__img"
+              />
+              <div>
+                <h3>46,328</h3>
+                <p class="bd-rg-2">Clubs</p>
               </div>
             </div>
 
-            <!-- Clubs And Groups -->
-            <div class="frame clubs-and-groups">
-              <div class="member">
-                <img
-                  src="./assets/media/icon/community_logos/Icon-2.svg"
-                  alt="Clubs And Groups"
-                />
-                <h4>Clubs And Groups</h4>
+            <div class="count-item">
+              <img
+                src="./assets/media/icon/achivmets/Event.svg"
+                alt="event booking"
+                class="count-item__img"
+              />
+              <div>
+                <h3>828,867</h3>
+                <p class="bd-rg-2">Event Bookings</p>
               </div>
-              <div class="description">
-                <p>
-                  Our membership management software provides full automation of
-                  membership renewals and payments
+            </div>
+
+            <div class="count-item">
+              <img
+                src="./assets/media/icon/achivmets/Payments.svg"
+                alt="payments"
+                class="count-item__img"
+              />
+              <div>
+                <h3>1,926,436</h3>
+                <p class="bd-rg-2">Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calender -->
+      <section class="container calender">
+        <div class="calender-img">
+          <img
+            src="/assets/media/img/pana.svg"
+            alt="The unseen of spending three years at Pixelgrade"
+          />
+        </div>
+
+        <div class="calender__frame">
+          <div class="calender__frame-text">
+            <h2>How to design your site footer like we did</h2>
+            <p class="bd-rg-3">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at
+              scelerisque elit erat a magna. Donec quis erat at libero ultrices
+              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
+              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+              commodo faucibus efficitur quis massa. Praesent felis est, finibus
+              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+              ipsum id gravida.
+            </p>
+          </div>
+          <!-- <div class="btn">Learn More</div> -->
+          <a href="" class="btn btn--learn-more bd-rg-3">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Customers -->
+      <section class="container customers">
+        <div class="container customers-container">
+          <div class="customer-image">
+            <img src="/assets/media/img/customers.jpg" alt="customers" />
+          </div>
+
+          <div class="frame-content">
+            <div class="customers-content">
+              <p class="bd-rg-md-2">
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </p>
+              <div class="customers-info">
+                <h4><span class="primary-color">Tim Smith</span></h4>
+                <p class="customer-role bd-rg-2">
+                  British Dragon Boat Racing Association
                 </p>
               </div>
             </div>
-            <!-- end frame -->
+            <div class="customer-logos">
+              <div class="logos-grid">
+                <img src="/assets/media/icon/customers/Logo.svg" alt="" />
+                <img src="/assets/media/icon/customers/Logo-1.svg" alt="" />
+                <img src="/assets/media/icon/customers/Logo-2.svg" alt="" />
+                <img src="/assets/media/icon/customers/Logo-3.svg" alt="" />
+                <img src="/assets/media/icon/customers/Logo-4.svg" alt="" />
+                <img src="/assets/media/icon/customers/Logo-5.svg" alt="" />
+              </div>
+              <a href="#" class="btn btn--tertiary h4"
+                >Meet all customers
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 16.399L19.2929 13.1062C19.6834 12.7156 19.6834 12.0825 19.2929 11.6919L16 8.39905M19 12.399L5 12.399"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Updates -->
+      <section class="container community-updates">
+        <!-- Text -->
+        <div class="community-updates__text">
+          <h2>Caring is the new marketing</h2>
+          <p class="bd-rg-2">
+            The Nextcent blog is the best place to read about the latest
+            membership insights, trends and more. See who's joining the
+            community, read about how our community are increasing their
+            membership income and lot's more.​
+          </p>
+        </div>
+
+        <!-- Frames -->
+        <div class="community-updates__frames">
+          <!-- Frame 1 -->
+          <div class="community-updates__frame">
+            <img
+              src="/assets/media/img/community-updates/image_1.jpg"
+              alt=""
+              class="community-updates__frame-img"
+            />
+
+            <!-- Contenet -->
+            <div class="community-updates__frame-content">
+              <div class="community-updates__frame-content__text">
+                <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
+              </div>
+
+              <a href="" class="btn btn--tertiary h4">
+                Read more
+                <svg
+                  class="community-updates__btn-icon"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.52582 8.4707L10.2449 6.7516C10.4488 6.54772 10.4488 6.21716 10.2449 6.01328L8.52582 4.29418M10.092 6.38244L2.43506 6.38244"
+                    stroke="currentColor"
+                    stroke-width="0.765676"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Frame 2 -->
+          <div class="community-updates__frame">
+            <img
+              src="/assets/media/img/community-updates/image_2.jpg"
+              alt=""
+              class="community-updates__frame-img"
+            />
+
+            <!-- Contenet -->
+            <div class="community-updates__frame-content">
+              <div class="community-updates__frame-content__text">
+                <h4>
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </h4>
+              </div>
+
+              <a href="" class="btn btn--tertiary h4">
+                Read more
+                <svg
+                  class="community-updates__btn-icon"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.52582 8.4707L10.2449 6.7516C10.4488 6.54772 10.4488 6.21716 10.2449 6.01328L8.52582 4.29418M10.092 6.38244L2.43506 6.38244"
+                    stroke="currentColor"
+                    stroke-width="0.765676"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Frame 3 -->
+          <div class="community-updates__frame">
+            <img
+              src="/assets/media/img/community-updates/image_3.jpg"
+              alt=""
+              class="community-updates__frame-img"
+            />
+
+            <!-- Contenet -->
+            <div class="community-updates__frame-content">
+              <div class="community-updates__frame-content__text">
+                <h4>Revamping the Membership Model with Triathlon Australia</h4>
+              </div>
+              <a href="" class="btn btn--tertiary h4">
+                Read more
+                <svg
+                  class="community-updates__btn-icon"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.52582 8.4707L10.2449 6.7516C10.4488 6.54772 10.4488 6.21716 10.2449 6.01328L8.52582 4.29418M10.092 6.38244L2.43506 6.38244"
+                    stroke="currentColor"
+                    stroke-width="0.765676"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__frame">
+        <h1>Pellentesque suscipit fringilla libero eu.</h1>
+        <a href="" class="btn btn--demo"
+          >Get a Demo
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 16.399L19.2929 13.1062C19.6834 12.7156 19.6834 12.0825 19.2929 11.6919L16 8.39905M19 12.399L5 12.399"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-big">
+        <!-- Company info -->
+        <div class="company-info">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="/"
+              ><img
+                src="./assets/media/img/Logo-white.svg"
+                alt="Nexcent"
+                class="footer__logo-img"
+            /></a>
+          </div>
+
+          <!-- Copyright -->
+          <div class="copyright">
+            <p class="bd-rg-3">Copyright © 2020 Nexcent ltd.</p>
+            <p class="bd-rg-3">All rights reserved</p>
+          </div>
+
+          <!-- Social Links -->
+
+          <div class="social">
+            <ul class="social-links">
+              <li class="social-link__item">
+                <a href=""
+                  ><img
+                    class="social-link__item-img"
+                    src="/assets/media/icon/social-icons/Social Icons.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="social-link__item">
+                <a href=""
+                  ><img
+                    class="social-link__item-img"
+                    src="/assets/media/icon/social-icons/Social Icons-1.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="social-link__item">
+                <a href=""
+                  ><img
+                    class="social-link__item-img"
+                    src="/assets/media/icon/social-icons/Social Icons-2.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="social-link__item">
+                <a href=""
+                  ><img
+                    class="social-link__item-img"
+                    src="/assets/media/icon/social-icons/Social Icons-3.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+          <!-- 1 -->
+          <div class="links-column">
+            <h4>Company</h4>
+            <div class="links-column__items">
+              <a href="" class="bd-rg-3 link-item">About us</a>
+              <a href="" class="bd-rg-3 link-item">Blog</a>
+              <a href="" class="bd-rg-3 link-item">Contact us</a>
+              <a href="" class="bd-rg-3 link-item">Pricing</a>
+              <a href="" class="bd-rg-3 link-item">Testimonials</a>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="links-column">
+            <h4>Support</h4>
+            <div class="links-column__items">
+              <a href="" class="bd-rg-3 link-item">Help center</a>
+              <a href="" class="bd-rg-3 link-item">Terms of service</a>
+              <a href="" class="bd-rg-3 link-item">Legal</a>
+              <a href="" class="bd-rg-3 link-item">Privacy policy</a>
+              <a href="" class="bd-rg-3 link-item">Status</a>
+            </div>
+          </div>
+
+          <!-- 3 -->
+
+          <div class="links-column__email">
+            <h4>Stay up to date</h4>
+            <div class="email-input">
+              <input
+                class="input-image"
+                id="user-email"
+                type="email"
+                placeholder="Your email address"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

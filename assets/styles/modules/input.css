@@ -1,0 +1,15 @@
+:root {
+    --input-padding: 10px 21px;
+    --input-border-radius: 8px;
+    --input-backgroud-color: rgba(255, 255, 255, 0.2);
+    --input-color: var(--color-white);
+
+    --input-height: 40px;
+    --input-width: 255px;
+
+    --input-font-size: var(--font-size-nd-rg-max);
+
+}
+
+
+

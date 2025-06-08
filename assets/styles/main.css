@@ -1,7 +1,11 @@
+/* Keyframe */
+@import  url('./modules/keyframes.css');
+
 @import url('./modules/normalize.css');
 @import url('./modules/fonts.css');
 @import url('./modules/colors.css');
 @import url('./modules/buttons.css');
+@import url('./modules/input.css');
 
 /* Headre */
 @import url('./sections/header.css');
@@ -14,22 +18,42 @@
 
 /* Comunity */
 @import url('./sections/comunity.css');
+@import url('./sections/unlock.css');
+@import url('./sections/achievements.css');
+@import url('./sections/calender.css');
+@import url('./sections/customers.css');
+@import url('./sections/community-updates.css');
+@import url('./sections/footer.css');
+
+
+/* Scale */
 
 /* * {
   box-sizing: border-box;
 } */
-
+ 
+* {
+    transition: all 0.3s;
+}
 @layer base {
-
   :root {
     /* Layaut */
 
-    --body-layout-max-width: 1632px;
+    --body-layout-max-width: 1440px;
+    /* --body--inline-padding: 144px; */
     --body--inline-padding: 144px;
+    
 
+
+
+    --pc-width: 1240px;
+    
     }
 
-  
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     html {
       font-family: var(--font-family-primary);
@@ -38,29 +62,44 @@
 
 
     body  {
-      background-color: var(--color-bg);      
-    }
+      
+      max-width: var(--body-layout-max-width);
 
+      background-color: var(--color-bg);  
+      animation: fadeIn 1.3s;
+
+    }
     
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
 
     .container {
-      --body-layout-max-width: 1632px;
-      --body--inline-padding: 144px;
+      
 
-      display: flex;
-      max-width: var(--body-layout-max-width);
-      padding-inline: var(--body--inline-padding);
-      margin: 0 auto;
+      /* display: flex; */
+      /* max-width: var(--body-layout-max-width); */
+      /* padding-inline: var(--body--inline-padding); */
+      /* margin: 0 0; */
+
+      padding: 0 var(--body--inline-padding);
+
+      @media screen and (max-width: 993px) {
+          padding: 0 20px;
+        }
     }
 
 
 
-    .section {
-      margin-top: 22px;
-      flex-direction: column;
+    ul {
+      padding: 0;
+    }
 
-      /* background-color: #000; */
 
+    .primary-color {
+      color: var(--color-primary);
     }
 
 }

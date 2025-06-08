@@ -1,0 +1,45 @@
+.unlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .unlock-img {
+        img {
+            width: 442px;
+            height: 433px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        .image {
+            width: 300px;
+        }
+
+    }
+
+
+}
+
+
+.unlock__frame {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    min-width: 661px;
+}
+
+.unlock__frame-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 601px;
+
+}
