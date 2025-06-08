@@ -1,25 +1,36 @@
-@layer clients {
-    .clients {
-        
+.clients-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 
-        /* flex-direction: column; */
-        padding: 27px;
-        text-align: center;
-     
-        .clients__content {
-            /* display: flex;             */
-            align-items: center;
-            .clients-logos {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 100px;
-
-                .clients-logo{
-                    width: 50px;
-                }
-                
-            }
-        }
+    p {
+        font-size: var(--font-size-p-lg-rg);
+        font-weight: 400;
     }
 }
+
+
+.clients-content__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+
+    height: 98px;
+}
+
+.clients-content__img {
+    width: 3rem;
+}
+
+
+.clients-content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/* .clients-content__img:hover {
+    width: 50px;
+} */

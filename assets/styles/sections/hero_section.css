@@ -1,48 +1,70 @@
-@layer hero-section {
+.hero {
+    background-color: var(--color-silver);
     
-    .hero {
-
-        --hero-content-max-width: 510px;
-        --hero-content-gap:72px;
-
-        /* width: 1002px; */
-        /* height: 416px; */
-
-        display: flex;
-        align-items: center;
-        /* padding: 66px 100px; */
-        justify-content: space-between;
-        background-color: var(--color-silver);
-
-        padding: 66px 100px;
-
-        .hero__content {
-            display: inline-block;
-            /* align-items: flex-start; */
-            /* gap: var(--hero-content-gap); */
-            
-            flex-direction: column;
-            gap: 11px;
-            
-            .btn {
-                padding: 10px 22px;
-            }
-
-            .h1 {
-                margin-top: -0.70px;
-            }
-            .hero__content_primary_color {
-                color: var(--color-primary);
-            }
-            
-            p {
-                margin-block: 27px;
-
-            }
-
-
-        }
-    }
-    
- 
 }
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 96px 0;
+
+
+    .image {
+        width: 391px;
+        height: 407px;
+    }
+
+
+    @media screen and (max-width: 900px) {
+    
+        flex-direction: column-reverse;
+        gap: 20px;
+        
+        .image {
+            width: 300px;
+        }
+
+    }
+}
+
+
+.hero-container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.hero-container__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+        font-weight: 400;
+    }
+}
+
+.hero__dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+
+  
+      
+    /* height: 16px; */
+    padding-bottom: 16px;
+    .dot {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--color-tint-1);
+        display: inline-block;
+    }
+}
+

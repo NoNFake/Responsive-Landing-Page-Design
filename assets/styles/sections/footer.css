@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 94px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-silver);
+
+    --main-footer-text-color: var(--color-white);
+
+    h4, a{
+        color: var(--main-footer-text-color);
+    }
+
+    .footer__frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            padding: 2rem;
+            gap: 2rem;
+        }
+    
+    
+        .footer-big {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: var(--color-black);
+    
+            padding: 64px 165px;
+        }
+    
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    
+        .footer__logo {
+            width: 191px;
+            height: 30px;
+        }
+    
+        .copyright {
+            gap: 0.5rem;
+            color: var(--color-white);
+        }
+    
+    
+        /* Social */
+    
+        .social {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .social-links {
+    
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    
+        .social-link__item-img {
+            width: 2rem;
+        }
+    
+    
+        /* Links */
+    
+        .links {
+            display: flex;
+            flex-direction: row;
+            align-items: self-start;
+            gap: 30px;
+            width: 635px;
+        }
+    
+        .links-column {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            min-width: 160px;
+        }
+
+
+        .links-column__email {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            max-width: 255px;
+        }
+    
+        .links-column__items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+    
+            .link-item {
+                text-decoration: none;
+            }
+
+          
+        }
+
+        .email-input{
+            input {
+                border-radius: var(--input-border-radius);
+
+
+                /* https: //developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Make_box_transparent */
+                background-color: var(--input-backgroud-color);
+              
+                
+                color: var(--input-color);
+                width: var(--input-width);
+                height: var(--input-height);
+                padding-inline: var(--input-padding);
+                
+                border: none;
+                font-size: var(--input-font-size);
+            }
+            
+            .input-image {
+                background-image: url('/assets/media/icon/input/send.svg');
+                background-repeat: no-repeat;
+                background-position:right;
+
+            }
+        }
+
+}
+
+

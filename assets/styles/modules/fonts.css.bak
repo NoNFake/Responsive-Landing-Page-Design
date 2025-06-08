@@ -1,0 +1,213 @@
+/* Fonts Module */
+
+:root {
+    /* Fonts | Size*/
+    --font-family-primary: 'Inter', sans-serif;
+
+    /* PC */
+    /* Header */
+    /* 600 */
+    --font-size-xxl:     76px;
+    --font-size-xlg:     44px;
+    --font-size-xnd:     36px;
+    --font-size-xsn:     28px;
+
+    --font-size-h1-76: var(--font-size-xxl);
+    --font-size-h2-44: var(--font-size-xlg);
+    --font-size-h3-36: var(--font-size-xnd);
+    --font-size-h4-28: var(--font-size-xsn);
+
+
+    --font-size-xl:      64px;
+    --font-size-lg:      36px;
+    --font-size-nd:      28px;
+    --font-size-sn:      20px;
+
+    --font-size-h1-64:     var(--font-size-xxl);
+    --font-size-h2-36:     var(--font-size-xlg);
+    --font-size-h3-28:     var(--font-size-xnd);
+    --font-size-h4-20:     var(--font-size-xsn);
+
+
+
+    .heading-x-1 { font-size: var(--font-size-h1-76); font-weight: 600;}
+    .heading-x-2 { font-size: var(--font-size-h2-44); font-weight: 600;}
+    .heading-x-3 { font-size: var(--font-size-h3-36); font-weight: 600;}
+    .heading-x-4 { font-size: var(--font-size-h4-28); font-weight: 600;}
+
+
+    .heading-1   { font-size: var(--font-size-h1-64); font-weight: 600;}
+    .heading-2   { font-size: var(--font-size-h2-44); font-weight: 600;}
+    .heading-3   { font-size: var(--font-size-h3-36); font-weight: 600;}
+    .heading-4   { font-size: var(--font-size-h4-28); font-weight: 600;}
+
+    
+
+    /* Body */
+    /* Regular*/
+    /* 400 */
+    --font-size-xxl-rg:  28px;
+    --font-size-xlg-rg:  24px;
+    --font-size-xnd-rg:  20px;
+    --font-size-xsn-rg:  16px;
+
+    --font-size-p-rg-28:  var(--font-size-xxl-rg);
+    --font-size-p-rg-24:  var(--font-size-xlg-rg);
+    --font-size-p-rg-20:  var(--font-size-xnd-rg);
+    --font-size-p-rg-16:  var(--font-size-xsn-rg);
+  
+    
+
+    --font-size-xl-rg: 18px;
+    --font-size-lg-rg: 16px;
+    --font-size-nd-rg: 14px;
+    --font-size-sn-rg: 12px;
+
+    --font-size-p-rg-18: var(--font-size-xxl-rg);
+    --font-size-p-rg-16: var(--font-size-lg-rg);
+    --font-size-p-rg-14: var(--font-size-nd-rg);
+    --font-size-p-rg-12: var(--font-size-sn-rg);
+
+
+    .body-regular-x-1 { font-size: var(--font-size-p-xxl-28); font-weight: 400;}
+    .body-regular-x-2 { font-size: var(--font-size-p-xlg-24);  font-weight: 400;}
+    .body-regular-x-3 { font-size: var(--font-size-p-xnd-20);  font-weight: 400;}
+    .body-regular-x-4 { font-size: var(--font-size-p-xsn-16);  font-weight: 400;}
+        
+    
+    .body-regular-1 { font-size: var(--font-size-p-xl-18); font-weight: 400;}
+    .body-regular-2 { font-size: var(--font-size-p-lg-16);  font-weight: 400;}
+    .body-regular-3 { font-size: var(--font-size-p-nd-14);  font-weight: 400;}
+    .body-regular-4 { font-size: var(--font-size-p-sn-12);  font-weight: 400;}
+    
+    /* Medium */
+    /* 500 */
+    --font-size-xxl-bd-md: 28px;
+    --font-size-lg-bd-md:  24px;
+    --font-size-nd-bd-md:  20px;
+    --font-size-sn-bd-md:  16px;
+    
+    --font-size-p-xxl-md:  var(--font-size-xxl-bd-md);
+    --font-size-p-lg-md:  var(--font-size-lg-bd-md);
+    --font-size-p-nd-md:  var(--font-size-ng-bd-md);
+    --font-size-p-sn-md:  var(--font-size-sn-bd-md);
+
+
+
+    .body-medium-1 { font-size: var(--font-size-p-xxl-md); font-weight: 500;}
+    .body-medium-2 { font-size: var(--font-size-p-lg-md);  font-weight: 500;}
+    .body-medium-3 { font-size: var(--font-size-p-nd-md);  font-weight: 500;}
+    .body-medium-4 { font-size: var(--font-size-p-sn-md);  font-weight: 500;}
+
+
+
+    /* Mobile */
+    /* Header mobile*/
+    --font-size-xxl-mb:    64px;
+    --font-size-lg-mb:     36px;
+    --font-size-nd-mb:     28px;
+    --font-size-sn-mb:     20px;
+
+    --font-size-h1-mb:     var(--font-size-xxl);
+    --font-size-h2-mb:     var(--font-size-lg);
+    --font-size-h3-mb:     var(--font-size-nd);
+    --font-size-h4-mb:     var(--font-size-sn);
+
+
+
+    .heading-1-mob { font-size: var(--font-size-h1-mb); font-weight: 600;}
+    .heading-2-mob { font-size: var(--font-size-h2-mb); font-weight: 600;}
+    .heading-3-mob { font-size: var(--font-size-h3-mb); font-weight: 600;}
+    .heading-4-mob { font-size: var(--font-size-h4-mb); font-weight: 600;}
+
+
+    /* Body */
+    /* Regular mobile*/
+    --font-size-xxl-rg-mb: 18px;
+    --font-size-lg-rg-mb:  16px;
+    --font-size-nd-rg-mb:  14px;
+    --font-size-sn-rg-mb:  12px;
+
+    --font-size-h1-rg-mb:  var(--font-size-xxl-rg);
+    --font-size-h2-rg-mb:  var(--font-size-lg-rg);
+    --font-size-h3-rg-mb:  var(--font-size-nd-rg);
+    --font-size-h4-rg-mb:  var(--font-size-sn-rg);
+  
+ 
+
+
+    .body-regular-1-mob { font-size: var(--font-size-p-xxl-rg); font-weight: 400;}
+    .body-regular-2-mob { font-size: var(--font-size-p-lg-rg);  font-weight: 400;}
+    .body-regular-3-mob { font-size: var(--font-size-p-nd-rg);  font-weight: 400;}
+    .body-regular-4-mob { font-size: var(--font-size-p-sn-rg);  font-weight: 400;}
+
+
+    /* Medium */
+    --font-size-xxl-md-mb: 18px;
+    --font-size-lg-md-mb:  16px;
+    --font-size-nd-md-mb:  14px;
+    --font-size-sn-md-mb:  12px;
+    
+    --font-size-h1-md-mb:  var(--font-size-xxl-md);
+    --font-size-h2-md-mb:  var(--font-size-lg-md);
+    --font-size-h3-md-mb:  var(--font-size-ng-md);
+    --font-size-h4-md-mb:  var(--font-size-sn-md);
+
+
+
+    .body-medium-1-mob { font-size: var(--font-size-h1-md-mb); font-weight: 500;}
+    .body-medium-2-mob { font-size: var(--font-size-h2-md-mb); font-weight: 500;}
+    .body-medium-3-mob { font-size: var(--font-size-h3-md-mb); font-weight: 500;}
+    .body-medium-4-mob { font-size: var(--font-size-h4-md-mb); font-weight: 500;}
+
+
+
+
+
+    /* Font Size */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      font-weight: 600;
+    }
+  
+    h1,
+    .h1 {
+      /* font-size: var(--font-size-h1); */
+      color: var(--color-d_grey);
+    }
+  
+    h2 {
+      /* font-size: var(--font-size-h2); */
+      color: var(--color-d_grey);
+    }
+  
+    h3 {
+      /* font-size: var(--font-size-h3); */
+      color: var(--color-d_grey);
+    }
+  
+    h4 {
+      /* font-size: var(--font-size-h4); */
+      color: var(--color-d_grey);
+    }
+  
+   
+
+     p {
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
+      color: var(--color-grey);
+    }
+        /*
+    a {
+        font-weight: 500;
+        /* line-height: 17px; 
+        font-size: var(--font-size-p-nd-rg);
+    } */
+  }
