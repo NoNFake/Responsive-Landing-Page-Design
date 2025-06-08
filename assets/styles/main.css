@@ -63,7 +63,7 @@
 
     body  {
       
-      max-width: var(--body-layout-max-width);
+      /* max-width: var(--body-layout-max-width); */
 
       background-color: var(--color-bg);  
       animation: fadeIn 1.3s;
