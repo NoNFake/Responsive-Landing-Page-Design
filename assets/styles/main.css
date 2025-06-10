@@ -87,7 +87,6 @@
     .container {
       /* max-width: var(--body-layout-max-width); */
       padding-inline: clamp(var(--body--inline-padding-mob), 6vw, var(--body--inline-padding-desk));
-      /* margin-inline: auto; */
     }
 
 
