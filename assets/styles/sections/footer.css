@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-    
+            text-align: center;
             padding: 2rem;
             gap: 2rem;
         }
@@ -27,6 +27,16 @@
             background-color: var(--color-black);
     
             padding: 64px 165px;
+
+
+
+            @media screen and (max-width: 786px) {
+       
+                padding: 32px 82px;
+                flex-direction: column;
+                
+                justify-content: center;
+            }
         }
     
         .company-info {
@@ -34,6 +44,11 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-between;
+
+            @media screen and (max-width: 786px) {
+                    gap: 20px;
+                    align-items: center;
+                }
         }
     
         .footer__logo {
@@ -75,6 +90,15 @@
             align-items: self-start;
             gap: 30px;
             width: 635px;
+
+
+
+            @media screen and (max-width: 786px) {
+            
+                flex-direction: column;
+                width: auto;
+                align-items: center;
+            }
         }
     
         .links-column {
@@ -92,6 +116,10 @@
             gap: 24px;
 
             max-width: 255px;
+
+            @media screen and (max-width: 786px) {
+                align-items: center;
+            }
         }
     
         .links-column__items {
@@ -107,7 +135,30 @@
         }
 
         .email-input{
+
+            
+
+
+
             input {
+                /* Desk */
+                --input-padding-desk: 10px 21px;
+                --input-height-desk: 40px;
+                --input-width-desk: 255px;
+                
+                /* Mobile */
+                --input-padding-mob: 6px 16px;
+                --input-height-mob: 30px;
+                --input-width-mob: 200px;
+
+
+                --input-border-radius: 8px;
+                --input-backgroud-color: rgba(255, 255, 255, 0.2);
+                --input-color: var(--color-white);
+                --input-font-size: var(--font-size-nd-rg-max);
+
+
+
                 border-radius: var(--input-border-radius);
 
 
@@ -115,13 +166,20 @@
                 background-color: var(--input-backgroud-color);
               
                 
-                color: var(--input-color);
-                width: var(--input-width);
-                height: var(--input-height);
-                padding-inline: var(--input-padding);
+                padding-inline: var(--input-padding-desk);
+                width: var(--input-width-desk);
+                height: var(--input-height-desk);
                 
+                color: var(--input-color);
                 border: none;
                 font-size: var(--input-font-size);
+
+
+                @media screen and (max-width: 786px) {
+                    padding-inline: var(--input-padding-mob);
+                    width: var(--input-width-mob);
+                    height: var(--input-height-mob);
+                }
             }
             
             .input-image {
@@ -134,4 +192,11 @@
 
 }
 
+
+/* mobile */
+ /* @media screen and (max-width: 900px) {
+    .footer-big {
+        flex-direction: column;
+    }
+ } */
 

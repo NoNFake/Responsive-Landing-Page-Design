@@ -13,14 +13,28 @@
         }
     }
 
-    @media screen and (max-width: 900px) {
 
-        flex-direction: column-reverse;
+    @media screen and (max-width: 1240px) {
+        .unlock-img {
+            img {
+                width: 375px;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 786px) {
+
+        flex-direction: column;
         gap: 20px;
 
-        .image {
-            width: 300px;
+        .unlock-img {
+            img {
+                width: 375px;
+            }
         }
+
+
 
     }
 
@@ -33,7 +47,11 @@
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    min-width: 661px;
+    
+    @media screen and (min-width: 900px) {
+        min-width: 661px;
+    
+    }
 }
 
 .unlock__frame-text {
