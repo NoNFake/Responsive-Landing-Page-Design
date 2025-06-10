@@ -1,11 +1,13 @@
 .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 83px;
     
     background-color: var(--color-silver);
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -25,65 +27,76 @@
 /* Menu */
 .header__nav {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
+    gap: 50px;
     
-    .header__nav-list {
-        display: flex;
-        list-style-type: none;
 
-        gap: 50px;
-        @media screen and (max-width: 786px) {
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            margin-top: 50px;
-        }
-    }
-
-    @media screen and (max-width: 786px) {
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 786px) {
         position: fixed;
-        inset: 0;
-        background-color: white;
+        top: 83px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 83px);
+        background-color: var(--color-white);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        transform: translateX(100%);
         z-index: 2;
-        translate: 100% 0;
-        transition: translate 0.2s;
 
         &.active {
-            translate: 0;
+            transform: translateX(0);
         }
     }
 } 
 
 
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
 
+    @media screen and (max-width: 786px) {
+        background-color: var(--color-white);
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+.header__nav-link {
+    text-decoration: none;
+    color: var(--color-gray);
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--color-black);
+    }
+}
 
 /* Login */
 .header__login {
     display: flex;
     flex-direction: row;
-
-    justify-items: right;
     gap: 14px;
 
 
 
     @media screen and (max-width: 786px) {
-       
-        flex-direction: column;
         position: fixed;
-        inset: 0;
-        /* background-color: white; */
-        z-index: 2;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
         justify-content: center;
-        translate: 100% 0;
-        transition: translate 0.2s;
+        padding-bottom: 300px;
+        transform: translateX(100%);
+        z-index: 2;
+
 
         &.active {
-            translate: 0;
+            transform: translateX(0);
         }
     }
 }
@@ -106,16 +119,20 @@
 }
 
 .burger-menu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
     span {
+        display: block;
+        position: absolute;
         background-color: black;
         height: 2px;
-        position: absolute;
         width: 100%;
-        left: 0;
-        transition: all 0.3s ease;
         border-radius: 10px;
 
-        &:first-child {
+        &:nth-child(1) {
             top: 0;
         }
 
@@ -124,100 +141,32 @@
             transform: translateY(-50%);
         }
 
-        &:last-child {
+        &:nth-child(3) {
             top: 100%;
             transform: translateY(-100%);
         }
     }
-}
-
-.nav-btn.active {
-    .burger-menu {
-        span {
-            &:first-child {
-                transform: rotate(45deg) translateY(6px);
-                top: 50%;
-            }
-
-            &:nth-child(2) {
-                opacity: 0;
-            }
-
-            &:last-child {
-                transform: rotate(-45deg) translateY(-6px);
-                top: 50%;
-            }
-        }
-    }
-}
-
-.header__nav,
-.header__login {
-    transition: all 0.3s ease;
-
-    &.active {
-        display: block;
-    }
-}
 
 
-
-/* Close */
-.close-nav  {
-
-    
-    /* width: 20px;
-    height: 16px;
-    z-index: 2;
-    cursor: pointer;
-    position: relative;
-    background-color: transparent;
-    outline: none;
-    border: none; */
-
-
-    span {
-
-        background-color: black;
-        height: 2px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        transition: all 0.3s ease;
-        border-radius: 10px;
-
-
-
+    .nav-btn.active {
+        
         &:nth-child(1) {
-            rotate: 45deg;
+            transform: rotate(45deg) translateY(5px);
+            top: 50%;
         }
 
         &:nth-child(2) {
-            rotate: -45deg;
+            opacity: 0;
         }
 
-    }
-   
-    
-} 
-
-
-
-
-
-.header__nav-link {
-    text-decoration: none;
-    color: var(--color-gray);
-    
-
-    &:hover {
-        text-decoration:underline;
-        color: var(--color-balck);
-        
+        &:nth-child(3) {
+            transform: rotate(-45deg) translateY(-6px);
+            top: 50%;
+        }
+          
+      
     }
 }
-
-
 
 
 
