@@ -66,6 +66,15 @@
 
 
     box-shadow: 0px 1.39214px 2.78428px rgba(171, 190, 209, 0.2);
+    
+    @media screen and (max-width: 1240px) {
+        padding: 12px 16px;
+      
+    }
+
+    @media screen and (max-width: 786px) {
+        padding: 8px 12px;
+    }
 
 }
 

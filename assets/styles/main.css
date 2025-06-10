@@ -6,7 +6,7 @@
 @import url('./modules/colors.css');
 @import url('./modules/buttons.css');
 @import url('./modules/input.css');
-
+@import url('./modules/media-view.css');
 /* Headre */
 @import url('./sections/header.css');
 
@@ -41,7 +41,9 @@
 
     --body-layout-max-width: 1440px;
     /* --body--inline-padding: 144px; */
-    --body--inline-padding: 144px;
+    --body--inline-padding-desk: 144px;
+    --body--inline-padding-lapt: 100px;
+    --body--inline-padding-mob: 40px;
     
 
 
@@ -53,6 +55,13 @@
     img {
       width: 100%;
       height: auto;
+
+      /* @media screen and (max-width: 1240px) {
+          width: 90%;
+      }
+      @media screen and (max-width: 786px) {
+        width: 80%;
+      } */
     }
 
     html {
@@ -63,11 +72,9 @@
 
     body  {
       
-      /* max-width: var(--body-layout-max-width); */
-
       background-color: var(--color-bg);  
+      margin-inline: auto;
       animation: fadeIn 1.3s;
-
     }
     
     main {
@@ -75,20 +82,12 @@
       flex-direction: column;
       gap: 40px;
     }
-
+    
+    
     .container {
-      
-
-      /* display: flex; */
       /* max-width: var(--body-layout-max-width); */
-      /* padding-inline: var(--body--inline-padding); */
-      /* margin: 0 0; */
-
-      padding: 0 var(--body--inline-padding);
-
-      @media screen and (max-width: 993px) {
-          padding: 0 20px;
-        }
+      padding-inline: clamp(var(--body--inline-padding-mob), 6vw, var(--body--inline-padding-desk));
+      /* margin-inline: auto; */
     }
 
 
