@@ -3,9 +3,14 @@ const headerNav = document.querySelector('.header__nav');
 const headerLogin = document.querySelector('.header__login');
 
 burgerBtn.addEventListener('click', () => {
-    burgerBtn.classList.toggle('active');
+    const isActive = burgerBtn.classList.toggle('active');
     headerNav.classList.toggle('active');
     headerLogin.classList.toggle('active');
+
+
+
+    document.body.style.overflow = isActive ? 'hidden' : '';
+
 });
 
 

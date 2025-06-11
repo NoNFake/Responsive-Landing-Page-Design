@@ -23,6 +23,7 @@
       font-size: var(--font-size-xl);
       line-height: var(--font-size-xl-height);
       font-weight: var(--font-weight-h-desk);
+      color: var(--color-d_grey);
     }
   
     h2 {
@@ -30,6 +31,7 @@
       font-size: var(--font-size-lg);
       line-height: var(--font-size-lg-height);
       font-weight: var(--font-weight-h-desk);
+      color: var(--color-d_grey);
     }
   
     h3 {
@@ -37,6 +39,7 @@
       font-size: var(--font-size-nd);
       line-height: var(--font-size-nd-height);
       font-weight: var(--font-weight-h-desk);
+      color: var(--color-d_grey);
     }
   
     h4 {
@@ -44,6 +47,7 @@
       font-size: var(--font-size-sn);
       line-height: var(--font-size-sn-height);
       font-weight: var(--font-weight-h-desk);
+      color: var(--color-d_grey);
     }
   
   
@@ -189,6 +193,10 @@
 
     .font-black {
       color: var(--color-black);
+    }
+
+    .font-grey {
+      color: var(--color-grey);
     }
         /*
     a {

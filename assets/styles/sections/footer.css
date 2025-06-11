@@ -18,6 +18,10 @@
             padding: 2rem;
             gap: 2rem;
         }
+
+        .footer__frame-text {
+            max-width: 626px;
+        }
     
     
         .footer-big {
